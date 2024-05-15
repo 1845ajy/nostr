@@ -53,7 +53,7 @@ cd \Nostr\nostr-rs-relay
 ```
 you can look in the databse using the follwing commands
 
-NOTE : carefull with this one as you might damage the db
+NOTE : ⚠️ carefull with this one as you might damage the db
 
 ```shell
 sqlite3 nostr.db
@@ -70,3 +70,34 @@ If you made it so far, congrats !!
 Now is time to connect your client and see it at work !!
 
 connect your client to ws://localhost:7001/ or ws://localhost:7001/. Send some messages, see the log get them in  real time and find them in the database.
+
+## Adding additional relays
+
+You can add additional relays to this relay network. Simply add the relay into the notr main folder and create the docker file within the new relay folder. Then add your relay to the all the executable methods 
+
+Docker compose file goes as follows, you can change the names of the rlays as you wish and the name of the docker files as you wish as well. 
+
+```shell
+version: '3'
+
+services:
+  nostr-rs-relay:
+    build: ./nostr-rs-relay
+    ports:
+      - "7001:8080"
+
+  rnostr:
+    build: ./rnostr
+    ports:
+      - "7002:8080"
+
+  relay3:
+    build: ./path_to_relay3_dockerfile
+    ports:
+      - "7003:8080"
+
+  relay4:
+    build: ./path_to_relay4_dockerfile
+    ports:
+      - "7004:8080"
+```
