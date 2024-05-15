@@ -1,8 +1,10 @@
-This is the Nsotr project for supply chain. This project contains 2 relays that have been chosen to parse data in 
-a supply chain environment.
+
+# Nostr-Jamps
+
+This is the Nsotr relay network project for supply chain. This project currently contains 2 relays that have been chosen to parse data into relays in a supply chain environment.
 
 
-### [NIPs](https://github.com/nostr-protocol/nips) that are suppoereted by this relay network
+### [NIPs](https://github.com/nostr-protocol/nips) that are supported by this relay network
 
 - [x] NIP-01: Basic protocol for all supply chain needs
 - [x] NIP-02: Contact list and petnames in identifying supply chain users.
@@ -22,7 +24,15 @@ a supply chain environment.
 - [x] NIP-45: Counting results. [experimental](#count)
 - [x] NIP-50: Keywords filter. [experimental](#search)
 
+### Prepare and config
 
+Clone this project into your IDE.
+
+```shell
+
+git clone https://github.com/1845ajy/nostr.git
+cd nostr
+```
 
 ## Quick Start (using docker)
 
@@ -30,7 +40,7 @@ Make sure docker is installed in your system and updated
 
 The provided docker compose file will build and complile the project.IF you wish to change the bind mounts you can edit the bind mounts in the docker-compose.yml file to the bind mounts you want. Currently both the relays (containers) have been bound to 8080 port and the host is connected to 7001 (nostr-rs-relay) and 7002(rnostr) relay. 
 
-The command below will create docker images and start both the containers (make sure to cd into the project)
+The command below will create docker images and start all the relays (containers) ⚠️ make sure to cd into the project first
 
 ```shell
 docker-compose up -d
