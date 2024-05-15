@@ -44,6 +44,26 @@ Run the bash script
 
 ./docker_setup.sh
 
+## Check the SQlite database of nostr-rs-relay
 
+make sure you have sqlite installed in your computer
 
-"# nostr" 
+cd \Nostr\nostr-rs-relay
+
+you can look in the databse using the follwing commands
+
+NOTE : carefull with this one as you might damage the db
+
+sqlite3 nostr.db
+
+sqlite> .databases
+sqlite> .tables
+sqlite> select * from event;
+sqlite> select count(*) from event;
+
+Connect your client
+If you made it so far, congrats !!
+
+Now is time to connect your client and see it at work !!
+
+connect your client to ws://localhost:7001/ or ws://localhost:7001/. Send some messages, see the log get them in  real time and find them in the database.
