@@ -67,9 +67,13 @@ sqlite> select count(*) from event;
 Connect your client
 If you made it so far, congrats !!
 
+## Connecting to a client
+
+These relays are now running in this host system and can be accessed only though the host system.⚠️ So any clients that needs to be conncted to this relay needs to be in the host computer and cannot be accessed though the internet. 
+
 Now is time to connect your client and see it at work !!
 
-connect your client to ws://localhost:7001/ or ws://localhost:7001/. Send some messages, see the log get them in  real time and find them in the database.
+connect your client to ws://localhost:7001/ or ws://localhost:7001/. you can add the client to other relays you might have put in the projct and would be aviable in a similar way with the ports you have setup. Send some messages, see the log get them in  real time and find them in the database.
 
 ## Adding additional relays
 
@@ -101,3 +105,9 @@ services:
     ports:
       - "7004:8080"
 ```
+## Lisence 
+
+
+## External Documentation and Links
+
+Add setup guide for external web access 
