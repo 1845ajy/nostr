@@ -4,7 +4,7 @@
 This is the Nsotr relay network project for supply chain. This project currently contains 2 relays that have been chosen to parse data into relays in a supply chain environment.
 
 
-### [NIPs](https://github.com/nostr-protocol/nips) that are supported by this relay network
+## [NIPs](https://github.com/nostr-protocol/nips) that are supported by this relay network
 
 - [x] NIP-01: Basic protocol for all supply chain needs
 - [x] NIP-02: Contact list and petnames in identifying supply chain users.
@@ -24,7 +24,7 @@ This is the Nsotr relay network project for supply chain. This project currently
 - [x] NIP-45: Counting results. [experimental](#count)
 - [x] NIP-50: Keywords filter. [experimental](#search)
 
-### Prepare and config
+## Prepare and config
 
 Clone this project into your IDE.
 
