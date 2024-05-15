@@ -48,18 +48,21 @@ Run the bash script
 
 make sure you have sqlite installed in your computer
 
+```shell
 cd \Nostr\nostr-rs-relay
-
+```
 you can look in the databse using the follwing commands
 
 NOTE : carefull with this one as you might damage the db
 
+```shell
 sqlite3 nostr.db
 
 sqlite> .databases
 sqlite> .tables
 sqlite> select * from event;
 sqlite> select count(*) from event;
+```
 
 Connect your client
 If you made it so far, congrats !!
