@@ -1,4 +1,4 @@
-This is the Nsotr project for supply chain. This project contains 3 relays that have been chosen to parse data in 
+This is the Nsotr project for supply chain. This project contains 2 relays that have been chosen to parse data in 
 a supply chain environment.
 
 Supports most applicable NIPs: 1, 2, 4, 9, 11, 12, 15, 16, 20, 22, 28, 33, 40
